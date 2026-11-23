@@ -1,0 +1,15 @@
+CHEVYPARTS101 CAPTURE PAGE — SETUP
+
+FILES: index.html (capture page), thanks.html (thank-you/service page), style.css, script.js, config.js, chevyparts101-service.jpg.
+
+IMPORTANT: The signup is intentionally disabled until a real email service is connected. No lead is collected or email sent by this static package alone.
+
+1. Choose an email marketing service that supports signup forms and automated welcome emails with PDF links (e.g., Brevo or MailerLite; confirm current plan limits).
+2. Upload the finished PDF shop manual to a hosted location and set its link in an automated welcome email. Do not assume a PDF exists in this package.
+3. Create an opt-in signup flow collecting first name, email and consent. Configure unsubscribe and your required sender/business details.
+4. IMPORTANT: The included JavaScript expects a secure JSON API endpoint accepting {first_name,email,consent} and returning HTTP 2xx on success with browser CORS allowed. Most email service APIs require secret keys and MUST NOT be called directly from browser code. Use a server-side Cloudflare Worker endpoint or replace the form with your provider's official hosted/embed form and success redirect to thanks.html.
+5. If using a secure Worker signup endpoint, set its public URL in config.js. Store email provider credentials ONLY as Worker secrets.
+6. Test with your own email: signup, consent, redirect, manual delivery, unsubscribe, mobile layout.
+7. Upload the files to your existing GitHub repository, replacing the current homepage assets; redeploy through Cloudflare after testing. Back up existing files first.
+
+Contact email: chevyparts101.carb@gmail.com

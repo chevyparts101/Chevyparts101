@@ -1,0 +1,1 @@
+IMAGE UPDATE: The original full ChevyParts101 advertisement is used on both pages without cropping, including on phones. Keep chevyparts101-service.jpg beside index.html and thanks.html. The email signup integration still needs to be configured as explained in SETUP.txt.
